@@ -1,0 +1,14 @@
+{
+    "name": "Title Length Counter",
+    "uri": "https://github.com/MominRaza/title-length-counter",
+    "description": "It shows the length of title below title text field.",
+    "version": "1.0",
+    "date": "2021-01-04",
+    "author": "Momin Raza",
+    "author_uri": "https://github.com/MominRaza",
+    "license": "GPLv2",
+    "update_uri": "https://github.com/MominRaza/title-length-counter/releases",
+    "min_q2a": "1.8",
+    "min_php": "5.1",
+    "load_order": "after_db_init"
+}
