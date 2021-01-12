@@ -20,8 +20,10 @@ class qa_html_theme_layer extends qa_html_theme_base
     title.onkeyup = function () {
         if (title.value.length > '.qa_opt('max_len_q_title').') {
             p2.className = "exceed";
-        } else {
+        } else if (title.value.length < '.qa_opt('min_len_q_title').') {
             p2.className = "";
+        } else {
+            p2.className = "matched";
         }
         p2.innerText = title.value.length + "/'.qa_opt('max_len_q_title').'";
     }

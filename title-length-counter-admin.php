@@ -11,6 +11,9 @@ class title_length_counter_admin {
 #title-length-count.exceed {
     color: var(--error);
 }
+#title-length-count.matched {
+    color: var(--selected);
+}
 /* Style for Title Length Counter Plugin LTR */
 #title-length-count {
 	float: right;
