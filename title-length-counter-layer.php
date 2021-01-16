@@ -10,7 +10,9 @@ class qa_html_theme_layer extends qa_html_theme_base
     function body_suffix()
 	{
         qa_html_theme_base::body_suffix();
-        $this->output('<script type="text/javascript">
+        switch ( $this->template ) {
+			case 'ask' :
+				$this->output('<script type="text/javascript">
     var title = document.getElementById("title");
     let p = document.createElement("p");
     p.innerText = title.value.length + "/'.qa_opt('max_len_q_title').'";
@@ -28,5 +30,7 @@ class qa_html_theme_layer extends qa_html_theme_base
         p2.innerText = title.value.length + "/'.qa_opt('max_len_q_title').'";
     }
 </script>');
+			break;
+		}
     }
 }
